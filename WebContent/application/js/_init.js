@@ -2,10 +2,10 @@
 var application_version = "2.0";
 var application_date = "2017-10-30";
 //----------------------------------
-var appliname = 'CNAM-TEST';
+var appliname = 'moneparcours-admin';
 var karutaname = appliname;
 var karuta_url = '../../../' + karutaname;
-var bckname = '-cnam-test';
+var bckname = '-cnam';
 var serverBCK = "../../../karuta-backend"+bckname; // fileserver backend
 var serverBCK_API = "../../../karuta-backend"+bckname+"/rest/api";
 var cas_url = "";
