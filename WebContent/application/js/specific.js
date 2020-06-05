@@ -1,4 +1,4 @@
-document.write("<link href='https://fonts.googleapis.com/css?family=Montserra' rel='stylesheet'/>");
+document.write("<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'/>");
 
 //------ EXEC BATCH AT USER CREATION ------------------
 var g_execbatch = true;
