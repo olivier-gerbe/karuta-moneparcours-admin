@@ -14,8 +14,8 @@ var serverBCK_REG = "";  // report registration server
 var serverBCK_REP = ""; // report server
 //-------- LANGUAGES------------
 var languages = [];
-languages [0] = 'fr';
-languages [1] = 'en';
+	languages [0] = 'fr';
+//	languages [1] = 'en';
 //----------------------------------
 var NONMULTILANGCODE = 0;  // default language if non-multilingual
 var LANGCODE = 0; //default value
@@ -24,7 +24,7 @@ var LANG = languages[LANGCODE]; //default value
 var audiovideohtml5 = true;
 var maxfilesizeupload = "32"; //Mo
 //----------------------------------
-var technical_support = ""; // email of technical support
+var technical_support = "info.karuta@gmail.com"; // email of technical support
 var demo = false;
 var karuta_create_account = false;
 //--------- NAVBAR BRAND ------------------ logo 126 x 34
@@ -54,13 +54,13 @@ var welcome5 = {}; 			//  Welcome sub-title
 	listinfo["en"] = "";
 //-----------PUBLIC PAGE -----------------------
 var welcome = {};// Welcome title
-	welcome["fr"] = "<img class='img-responsive' src='"+karuta_url+"/karuta/img/logofonbleu.jpg'/>";
+	welcome["fr"] = "<img class='img-responsive' src='"+karuta_url+"/application/img/logo-cnam.png' style='margin-left:20px;'/>";
 	welcome["en"] = "<img class='img-responsive' src='"+karuta_url+"/karuta/img/logofonbleu.jpg'/>";
 //--------- PUBLIC EMAIL LOGO - MESSAGE -------
 var url = window.location.href;
-var serverURL = url.substring(0,url.indexOf(appliname)-1);
-var g_sendEmailPublicURL_logo = serverURL+"/karuta/karuta/img/logofonbleu.jpg";
-var g_sendEmailPublicURL_message ="&lt;img src='"+g_sendEmailPublicURL_logo+"' style='width:300px;margin-bottom:4px;margin-top:30px;'&gt;";
+var serverURL = url.substring(0,url.indexOf(appliname)+appliname.length);
+var g_sendEmailPublicURL_logo = serverURL+"/application/img/logo-cnam.png";
+var g_sendEmailPublicURL_message ="&lt;img src='"+g_sendEmailPublicURL_logo+"' style='width:200px;margin-bottom:4px;margin-top:30px;'&gt;";
 g_sendEmailPublicURL_message +=  "&lt;div style='margin:30px;border-radius:4px;padding:10px;border: 1px solid lightGrey;box-shadow: 3px 3px 3px #CCC'&gt;";
 g_sendEmailPublicURL_message += "&lt;br/&gt;#firstname# #lastname# #want-sharing#";
 g_sendEmailPublicURL_message += "&lt;div style='font-weight:bold;font-size:14pt;margin:30px;width:150px;'&gt;";
