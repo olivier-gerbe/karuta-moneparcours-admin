@@ -29,9 +29,9 @@ var demo = false;
 var karuta_create_account = false;
 //--------- NAVBAR BRAND ------------------ logo 126 x 34
 var navbar_title = {};
-navbar_title["fr"] = "<img src='"+karuta_url+"/karuta/img/karuta-navbar.jpg'/>";
-navbar_title["en"] = "<img src='"+karuta_url+"/karuta/img/karuta-navbar.jpg'/>";
-navbar_title["ja"] = "<img src='"+karuta_url+"/karuta/img/karuta-navbar.jpg'/>";
+navbar_title["fr"] = "<img src='"+karuta_url+"/application/img/logo-cnam-small.png'/>";
+navbar_title["en"] = "<img src='"+karuta_url+"/application/img/logo-cnam-small.png'/>";
+navbar_title["ja"] = "<img src='"+karuta_url+"/application/img/logo-cnam.png'/>";
 //-----------LOGIN PAGE -----------------------
 var welcome1 = {};// Welcome title
 	welcome1["fr"] = "<img class='img-responsive' src='"+karuta_url+"/karuta/img/logofonbleu.jpg'/>";
