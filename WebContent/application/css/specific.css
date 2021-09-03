@@ -1,6 +1,7 @@
 body {
 	font-family: Montserrat,"Open Sans",sans-serif;
 }
-.navbar-brand {
+#navigation-bar .navbar-brand {
 	padding:0px;
 }
+#main-body[userrole=auditeur] #home-icon { display:none;}
