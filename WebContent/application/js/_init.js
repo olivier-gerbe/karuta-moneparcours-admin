@@ -24,7 +24,7 @@ var LANG = languages[LANGCODE]; //default value
 var audiovideohtml5 = true;
 var maxfilesizeupload = "32"; //Mo
 //----------------------------------
-var technical_support = "info.karuta@gmail.com"; // email of technical support
+var technical_support = "aioa-ip@cnam.onmicrosoft.comm"; // email of technical support
 var demo = false;
 var karuta_create_account = false;
 //--------- NAVBAR BRAND ------------------ logo 126 x 34
