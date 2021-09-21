@@ -29,7 +29,7 @@ var demo = false;
 var karuta_create_account = false;
 //--------- NAVBAR BRAND ------------------ logo 126 x 34
 var navbar_title = {};
-navbar_title["fr"] = "<img src='"+karuta_url+"/application/img/logo-cnam-small.png'/>";
+navbar_title["fr"] = "<img src='"+karuta_url+"/application/img/logo-cnam-header.png'/>";
 navbar_title["en"] = "<img src='"+karuta_url+"/application/img/logo-cnam-small.png'/>";
 navbar_title["ja"] = "<img src='"+karuta_url+"/application/img/logo-cnam.png'/>";
 //-----------LOGIN PAGE -----------------------
