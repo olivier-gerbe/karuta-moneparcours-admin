@@ -229,19 +229,23 @@ function getNavBar(type,portfolioid,edit)
 		}
 		//-----------------LOGOUT-----------------------------------------
 		html += "			<ul class='nav navbar-nav navbar-right'>";
-		html += "						<li><a onclick='logout()' class='navbar-icon' data-title='"+karutaStr[LANG]["button-disconnect"]+"' data-tooltip='true' data-placement='bottom'><span class='glyphicon glyphicon-log-out'></span></a></li>";
+		//html += "						<li><a onclick='logout()' class='navbar-icon' data-title='"+karutaStr[LANG]["button-disconnect"]+"' data-tooltip='true' data-placement='bottom'><span class='glyphicon glyphicon-log-out'></span></a></li>";
 		html += "			</ul>";
 		//-----------------USERNAME-----------------------------------------
 		html += "			<ul class='nav navbar-nav navbar-right'>";
-		html += "				<li class='dropdown'><a data-toggle='dropdown' class='dropdown-toggle navbar-icon' data-title='"+karutaStr[LANG]["button-change-password"]+"' data-tooltip='true' data-placement='bottom' ><span class='glyphicon glyphicon-user'></span>&nbsp;&nbsp;"+USER.firstname+" "+USER.lastname;
-		html += " 					<span class='glyphicon glyphicon-triangle-bottom'></span></a>";
-		html += "					<ul class='dropdown-menu pull-right'>";
-		html += "						<li><a href=\"javascript:UIFactory['User'].callChangePassword()\">"+karutaStr[LANG]['change_password']+"</a></li>";
-		if ((USER.creator && !USER.limited)  && !USER.admin)
-			html += "						<li><a href=\"javascript:UIFactory['User'].callCreateTestUser()\">"+karutaStr[LANG]['create-test-user']+"</a></li>";
-		if (USER.change_name)
-			html += "						<li><a href=\"javascript:UIFactory['User'].callChangeName()\">"+karutaStr[LANG]['change_name']+"</a></li>";
-		html += "					</ul>";
+		html += "				<li class='dropdown'><a ><span class='glyphicon glyphicon-user'></span>&nbsp;&nbsp;"+USER.firstname+" "+USER.lastname+"</a>";
+		if (((USER.creator && !USER.limited)  && !USER.admin) || USER.change_name) {
+			html += "						<li><a href=\"javascript:UIFactory['User'].callChangePassword()\">"+karutaStr[LANG]['change_password']+"</a></li>";
+			html += " 					<span class='glyphicon glyphicon-triangle-bottom'></span></a>";
+			html += "					<ul class='dropdown-menu pull-right'>";
+			if ((USER.creator && !USER.limited)  && !USER.admin) {
+				html += "						<li><a href=\"javascript:UIFactory['User'].callChangePassword()\">"+karutaStr[LANG]['change_password']+"</a></li>";
+				html += "						<li><a href=\"javascript:UIFactory['User'].callCreateTestUser()\">"+karutaStr[LANG]['create-test-user']+"</a></li>";
+			}
+			if (USER.change_name)
+				html += "						<li><a href=\"javascript:UIFactory['User'].callChangeName()\">"+karutaStr[LANG]['change_name']+"</a></li>";
+			html += "					</ul>";
+		}
 		html += "				</li>";
 		html += "			</ul>";
 	}

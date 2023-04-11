@@ -343,6 +343,7 @@ UIFactory["Get_Resource"].prototype.displayEditor = function(destid,type,langcod
 		var target = queryattr_value.substring(srce_indx+1); // label or text
 		//------------
 		var portfoliocode = queryattr_value.substring(0,semtag_indx);
+		// ==============================================================================
 		if (portfoliocode.indexOf("ROME")>-1){  // ==== ROME =====
 			var self = this;
 			if (cachable && g_Get_Resource_caches[queryattr_value]!=undefined && g_Get_Resource_caches[queryattr_value]!="")
@@ -375,7 +376,7 @@ UIFactory["Get_Resource"].prototype.displayEditor = function(destid,type,langcod
 					}
 				});
 			}
-		
+		// ==============================================================================
 		} else {	// ==== KARUTA =====
 			var selfcode = $("code",$("asmRoot>asmResource[xsi_type='nodeRes']",UICom.root.node)).text();
 			if (portfoliocode.indexOf('.')<0 && selfcode.indexOf('.')>0 && portfoliocode!='self')  // There is no project, we add the project of the current portfolio
